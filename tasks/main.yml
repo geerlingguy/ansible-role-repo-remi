@@ -1,0 +1,7 @@
+---
+# Remi yum repository.
+- name: Download Remi repo.
+  get_url: url=http://rpms.famillecollet.com/enterprise/remi-release-6.rpm dest=/tmp/
+
+- name: Install Remi repo.
+  command: rpm -Uvh --force /tmp/remi-release-6.rpm creates=/etc/yum.repos.d/remi.repo
