@@ -5,3 +5,7 @@
 
 - name: Install Remi repo.
   command: rpm -Uvh --force /tmp/remi-release-6.rpm creates=/etc/yum.repos.d/remi.repo
+
+- name: Configure Remi repo.
+  template: src=remi.repo.j2 dest=/etc/yum.repos.d/remi.repo
+  

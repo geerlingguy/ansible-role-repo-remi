@@ -1,0 +1,9 @@
+---
+enable_remi: 0
+enable_remi_php55: 0
+enable_remi_php56: 0
+enable_remi_test: 0
+enable_remi_debuginfo: 0
+enable_remi_php55_debuginfo: 0
+enable_remi_php56_debuginfo: 0
+enable_remi_test_debuginfo: 0
