@@ -12,7 +12,7 @@ None.
 
 ## Dependencies
 
-None.
+* geerlingguy.repo-epel
 
 ## Example Playbook
 
