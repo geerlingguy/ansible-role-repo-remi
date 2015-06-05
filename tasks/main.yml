@@ -1,7 +1,11 @@
 ---
 # Remi yum repository.
-- name: Download Remi repo.
-  get_url: url=http://rpms.famillecollet.com/enterprise/remi-release-6.rpm dest=/tmp/
+- name: Install remi repo.
+  yum: 
+    name: "{{ remi_repo_url }}"
+    state: present
 
-- name: Install Remi repo.
-  command: rpm -Uvh --force /tmp/remi-release-6.rpm creates=/etc/yum.repos.d/remi.repo
+- name: Import remi GPG key.
+  rpm_key:
+    key: "{{ remi_repo_gpg_key_url }}"
+    state: present
