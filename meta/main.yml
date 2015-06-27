@@ -3,15 +3,13 @@ dependencies: []
 
 galaxy_info:
   author: geerlingguy
-  description: Remi's RPM repository for RHEL/CentOS 5-7.x.
+  description: Remi's RPM repository for RHEL/CentOS.
   company: "Midwestern Mac, LLC"
   license: "license (BSD, MIT)"
   min_ansible_version: 1.4
   platforms:
   - name: EL
     versions:
-    - 5
-    - 6
-    - 7
+    - all
   categories:
     - packaging
