@@ -1,6 +1,8 @@
 # Ansible Role: Remi Repository
 
-Installs the Remi repository (Les RPM de Remi) for RHEL/CentOS.
+[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-repo-remi.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-repo-remi)
+
+Installs [Remi's RPM repository](http://rpms.famillecollet.com/) for RHEL/CentOS.
 
 ## Requirements
 
@@ -26,7 +28,7 @@ None.
 
     - hosts: servers
       roles:
-        - { role: geerlingguy.repo-remi }
+        - geerlingguy.repo-remi
 
 ## License
 
