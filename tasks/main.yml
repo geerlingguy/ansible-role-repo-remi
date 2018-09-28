@@ -8,3 +8,18 @@
   rpm_key:
     key: "{{ remi_repo_gpg_key_url }}"
     state: present
+
+- name: Enable/Disable specific remi repository
+  block:
+    - name: Make sure yum-utils are present
+      yum: name=yum-utils state=present
+    - name: Enable remi repository
+      command: yum-config-manager --enable {{ item }}
+      loop: "{{ remi_repo_enable_list }}"
+      when: remi_repo_enable_list is defined
+    - name: Disable remi repository
+      command: yum-config-manager --disable {{ item }}
+      loop: "{{ remi_repo_disable_list }}"
+      when: remi_repo_disable_list is defined
+  when: remi_repo_enable_list is defined or
+        remi_repo_disable_list is defined

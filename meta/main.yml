@@ -2,11 +2,11 @@
 dependencies: []
 
 galaxy_info:
-  author: geerlingguy
+  role_name: repo_remi
+  author: ericsysmin
   description: Remi's RPM repository for RHEL/CentOS.
-  company: "Midwestern Mac, LLC"
   license: "license (BSD, MIT)"
-  min_ansible_version: 1.8
+  min_ansible_version: 2.2
   platforms:
     - name: EL
       versions:
