@@ -1,6 +1,6 @@
 # Ansible Role: Remi Repository
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-repo-remi.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-repo-remi)
+[![Build Status](https://travis-ci.org/ericsysmin/ansible-role-repo-remi.svg?branch=master)](https://travis-ci.org/ericsysmin/ansible-role-repo-remi)
 
 Installs [Remi's RPM repository](http://rpms.famillecollet.com/) for RHEL/CentOS.
 
@@ -29,6 +29,8 @@ None.
     - hosts: servers
       roles:
         - geerlingguy.repo-remi
+          remi_repo_enable_list:
+            - remi-php72
 
 ## License
 
@@ -36,4 +38,6 @@ MIT / BSD
 
 ## Author Information
 
-This role was created in 2014 by [Jeff Geerling](https://www.jeffgeerling.com/), author of [Ansible for DevOps](https://www.ansiblefordevops.com/).
+This role was created in 2014 by [Jeff Geerling](https://www.jeffgeerling.com/)
+
+Updated by [Eric Anderson](https://ericsysmin.com/) 2018

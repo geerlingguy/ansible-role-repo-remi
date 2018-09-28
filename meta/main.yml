@@ -2,7 +2,8 @@
 dependencies: []
 
 galaxy_info:
-  author: geerlingguy
+  role_name: repo-remi
+  author: ericsysmin
   description: Remi's RPM repository for RHEL/CentOS.
   company: "Midwestern Mac, LLC"
   license: "license (BSD, MIT)"
