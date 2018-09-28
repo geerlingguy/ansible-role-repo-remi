@@ -28,7 +28,7 @@ None.
 
     - hosts: servers
       roles:
-        - geerlingguy.repo-remi
+        - ericsysmin.repo-remi
           remi_repo_enable_list:
             - remi-php72
 

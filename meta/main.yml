@@ -2,7 +2,7 @@
 dependencies: []
 
 galaxy_info:
-  role_name: repo-remi
+  role_name: repo_remi
   author: ericsysmin
   description: Remi's RPM repository for RHEL/CentOS.
   license: "license (BSD, MIT)"
