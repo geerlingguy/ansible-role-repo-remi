@@ -3,6 +3,7 @@
   yum:
     name: "{{ remi_repo_url }}"
     state: present
+    validate_certs: "{{ remi_repo_validate_certs }}"
 
 - name: Import remi GPG key.
   rpm_key:
