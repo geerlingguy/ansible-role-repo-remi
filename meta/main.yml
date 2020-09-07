@@ -18,6 +18,8 @@ galaxy_info:
     - epel
     - repository
     - repo
+    - remi
+    - php
     - redhat
     - rhel
     - centos
