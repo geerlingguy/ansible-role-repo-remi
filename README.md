@@ -1,6 +1,6 @@
 # Ansible Role: Remi Repository
 
-[![Build Status](https://travis-ci.com/geerlingguy/ansible-role-repo-remi.svg?branch=master)](https://travis-ci.com/geerlingguy/ansible-role-repo-remi)
+[![CI](https://github.com/geerlingguy/ansible-role-repo-remi/workflows/CI/badge.svg?event=push)](https://github.com/geerlingguy/ansible-role-repo-remi/actions?query=workflow%3ACI)
 
 Installs [Remi's RPM repository](http://rpms.famillecollet.com/) for RHEL/CentOS.
 
