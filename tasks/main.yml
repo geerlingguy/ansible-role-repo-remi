@@ -1,10 +1,26 @@
 ---
+- name: Check if REMI repo is already configured.
+  stat:
+    path: "{{ remi_repofile_path }}"
+  register: remi_repofile_result
+
 - name: Import remi GPG key.
   rpm_key:
     key: "{{ remi_repo_gpg_key_url }}"
     state: present
+  register: result
+  until: result is succeeded
+  retries: 5
+  delay: 10
+  when: not remi_repofile_result.stat.exists
+  ignore_errors: "{{ ansible_check_mode }}"
 
 - name: Install remi repo.
   yum:
     name: "{{ remi_repo_url }}"
     state: present
+  register: result
+  until: result is succeeded
+  retries: 5
+  delay: 10
+  when: not remi_repofile_result.stat.exists
