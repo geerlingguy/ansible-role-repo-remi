@@ -16,7 +16,7 @@ Available variables are listed below, along with default values (see `defaults/m
 
 The URL from which the Remi repo `.rpm` will be downloaded and installed.
 
-    remi_repo_gpg_key_url: "https://rpms.remirepo.net/RPM-GPG-KEY-remi2018"
+    remi_repo_gpg_key_url: "https://rpms.remirepo.net/enterprise/{{ ansible_distribution_major_version }}/RPM-GPG-KEY-remi"
 
 Remi repo GPG key location. Can be set to a local file or to the URL from Remi's website.
 
